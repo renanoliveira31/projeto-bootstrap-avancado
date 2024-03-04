@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="icon" href="./img/amazon.png">
+    <style>
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10em;
+        }
+
+        .card {
+        margin-top: -10em;
+    }
+    .card-body a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .card-body a:hover {
+        color: rgb(218, 140, 107);
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .col-4 {
+    width: 50%;
+    margin-top: 11em;
+}
+}
+
+@media (max-width: 767.98px) {
+  .col-4 {
+    width: 100%; 
+    margin-top: 11em;
+  }
+}
+    </style>
+    <title>Amazon.com.br | Tudo pra você, de A a Z.</title>
+</head>
+<body>
+    <header id="cabecalho">
+    </header>
+    <section>
+        <div class="container">
+            <div id="carousel" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/71sMdTEdCoL._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/714hAtW0xBL._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/71dSE2uObYL._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="https://m.media-amazon.com/images/I/71S+73NWgoL._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/71CnX6jJNYL._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/61Na2ZSm+4L._SX3000_.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 imgcarousel" src="https://m.media-amazon.com/images/I/610ZtF--BBL._SX3000_.jpg"/>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel"  data-bs-slide="prev" class="carousel-control-prev btn-lg bcarousel" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel"  data-bs-slide="next" class="carousel-control-next bcarousel type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+           <div class="row">
+            <div class="col-4">
+                <article class="card">
+                        Ofertas do Dia, de A a Z
+                    <img src="./img/imgcard1.jpg"/>
+                    <div class="card-body">
+                        <a href="#">Veja todas as ofertas</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-4">
+                <article class="card">
+                        O seu príncipe favorito em audiolivro
+                    <img src="./img/imgcard4.jpg"/>
+                    <div class="card-body">
+                        <a href="#">Ouça agora na Audible</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-4">
+                <article class="card">
+                        Compre usando pontos Livelo
+                    <img src="./img/imgcard3.jpg"/>
+                    <div class="card-body">
+                        <a href="#">Confira como resgatar os pontos</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>    
+    </section>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+<script>
+</script>
+</body>
+</html>
