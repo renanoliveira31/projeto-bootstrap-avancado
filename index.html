@@ -32,6 +32,20 @@
         margin-bottom: -0.5em;
     }
 
+    #carousel3 h5, #carousel2 h5 {
+      background-color: white;
+      width: 100%;
+      margin-left: 0.81em;
+      margin-bottom: -0.8em;
+      padding-left: 1em;
+      padding-bottom: 0.3em;
+      padding-top: 0.3em;
+    }
+
+    #carousel3 {
+      margin-top: 3em;
+    }
+
         .card {
         margin-top: -10em;
         border-radius: 0px;
@@ -42,6 +56,18 @@
         margin-right: -1em;
         margin-left: 1em;
         height: 170%;
+    }
+
+    .card1 {
+        margin-top: 0.5em;
+        border-radius: 0px;
+        border-color: white;
+        background-color: white;
+        padding: 1em;
+        align-self: center;
+        margin-right: -1em;
+        margin-left: 1em;
+        height: 100%;
     }
     .card-body a {
         text-decoration: none;
@@ -61,6 +87,37 @@
 
     .imgcarousel2 h5 {
         margin-left: 10px;
+    }
+
+    footer {
+      margin-top: 2em;
+      background-color: #232f3e;
+    }
+
+    footer h5 {
+      font-weight: 700;
+      color: white;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #DDD;
+      text-decoration: none;
+    }
+
+    .text-center1 {
+      border-top: 1px solid rgba(221, 221, 221, 0.3);
+      justify-content: center;
+      text-align: center;
+    }
+    .text-center1 img {
+    width: 108px;
+    height: 50%;
+    margin: 0 auto;
+    }
+
+    .col-lg-3 {
+      margin-top: 1em;
     }
 
     @media (min-width: 768px) and (max-width: 991.98px) {
@@ -94,7 +151,7 @@
 <body>
     <header id="cabecalho">
     </header>
-    <section>
+    <!--<section>
         <div class="container">
             <div id="carousel" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -126,6 +183,7 @@
                     <span class="carousel-control-next-icon previcon1"></span>
                 </button>
             </div>
+
             <div class="row">
             <div class="col-4">
                 <article class="card">
@@ -155,143 +213,212 @@
                 </article>
             </div>
         </div>
-        <div id="carousel2" class="carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h5>Ofertas do Dia, de A a Z</h5>
-                <div class="carousel-item active">
-                    <img class="d-block imgcarousel2" src="./img/imgcarousel2.png"/>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block imgcarousel2" src="https://m.media-amazon.com/images/I/714hAtW0xBL._SX3000_.jpg"/>
+
+        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+          <h5>Chegando agora? Confira estas dicas!</h5>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <a href="#"><img src="./img/imgcarousel21.jpg" class="d-block" alt="Imagem 1"></a>
+                  <a href="#"><img src="./img/imgcarousel22.jpg" class="d-block" alt="Imagem 2"></a>
+                  <a href="#"><img src="./img/imgcarousel23.jpg" class="d-block" alt="Imagem 3"></a>
+                  <a href="#"><img src="./img/imgcarousel24.jpg" class="d-block" alt="Imagem 4"></a>
+                  <a href="#"><img src="./img/imgcarousel25.jpg" class="d-block" alt="Imagem 5"></a>
+                  <a href="#"><img src="./img/imgcarousel26.jpg" class="d-block" alt="Imagem 6"></a>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <a href="#"><img src="./img/imgcarousel27.jpg" class="d-block" alt="Imagem 7"></a>
+                    <a href="#"><img src="./img/imgcarousel28.jpg" class="d-block" alt="Imagem 8"></a>
+                    <a href="#"><img src="./img/imgcarousel29.jpg" class="d-block" alt="Imagem 9"></a>
+                    <a href="#"><img src="./img/imgcarousel21.jpg" class="d-block" alt="Imagem 1"></a>
+                    <a href="#"><img src="./img/imgcarousel22.jpg" class="d-block" alt="Imagem 2"></a>
+                    <a href="#"><img src="./img/imgcarousel23.jpg" class="d-block" alt="Imagem 3"></a>
                 </div>
             </div>
-            <button data-bs-target="#carousel2"  data-bs-slide="prev" class="carousel-control-prev btn-lg bcarousel2" type="button">
-                <span class="carousel-control-prev-icon previcon2"></span>
-            </button>
-            <button data-bs-target="#carousel2"  data-bs-slide="next" class="carousel-control-next bcarousel2 btn-bs-light type="button">
-                <span class="carousel-control-next-icon previcon2"></span>
-            </button>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+      </div>
+
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+        <h5>Chegando agora? Confira estas dicas!</h5>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <a href="#"><img src="./img/imgcarousel30.jpg" class="d-block " alt="Imagem 30"></a>
+                <a href="#"><img src="./img/imgcarousel31.jpg" class="d-block " alt="Imagem 31"></a>
+                <a href="#"><img src="./img/imgcarousel32.jpg" class="d-block " alt="Imagem 32"></a>
+                <a href="#"><img src="./img/imgcarousel33.jpg" class="d-block " alt="Imagem 33"></a>
+                <a href="#"><img src="./img/imgcarousel34.jpg" class="d-block " alt="Imagem 34"></a>
+                <a href="#"><img src="./img/imgcarousel35.jpg" class="d-block " alt="Imagem 35"></a>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                  <a href="#"><img src="./img/imgcarousel36.jpg" class="d-block " alt="Imagem 36"></a>
+                  <a href="#"><img src="./img/imgcarousel37.jpg" class="d-block " alt="Imagem 37"></a>
+                  <a href="#"><img src="./img/imgcarousel38.jpg" class="d-block " alt="Imagem 38"></a>
+                  <a href="#"><img src="./img/imgcarousel39.jpg" class="d-block " alt="Imagem 39"></a>
+                  <a href="#"><img src="./img/imgcarousel40.jpg" class="d-block " alt="Imagem 40"></a>
+                  <a href="#"><img src="./img/imgcarousel41.jpg" class="d-block " alt="Imagem 41"></a>
+              </div>
+          </div>
         </div>
-    </div>    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+      <div class="row">
+        <div class="col-4">
+            <article class="card card1">
+                    <h5>Mais Vendidos em Informática</h5>
+                <img src="./img/imgcard11.jpg"/>
+                <div class="card-body">
+                    <a href="#">Veja mais em Informática</a>
+                </div>
+            </article>
+        </div>
+        <div class="col-4">
+            <article class="card card1">
+                    <h5>Tudo para Exercícios e Academia</h5>
+                <img src="./img/imgcard12.jpg"/>
+                <div class="card-body">
+                    <a href="#">Veja mais em Exercícios</a>
+                </div>
+            </article>
+        </div>
+        <div class="col-4">
+            <article class="card card1">
+                    <h5>Mais Vendidos em TV e Áudio</h5>
+                <img src="./img/imgcard13.jpg"/>
+                <div class="card-body">
+                    <a href="#">Veja mais em TV e Áudio</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    </div>
     </section>
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Grid container -->
+
+    <footer class="text-center text-lg-start">
         <div class="container p-3">
-            <!--Grid row-->
             <div class="row">
-              <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-          
+                <h5>Conheça-nos</h5>
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!">Sobre a Amazon</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!">Informações corporativas</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
+                    <a href="#!">Carreiras</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!">Comunicados à imprensa</a>
                   </li>
                 </ul>
               </div>
-              <!--Grid column-->
-              <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-          
+                <h5>Ganhe dinheiro conosco</h5>
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!">Venda na Amazon</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!">Proteja e construa a sua marca</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
+                    <a href="#!">Publique seus livros</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!">Seja um associado</a>
                   </li>
                 </ul>
               </div>
-              <!--Grid column-->
-              <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-          
+                <h5>Pagamento</h5>
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!">Meios de Pagamento</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!">Compre com Pontos</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!">Cartão de Crédito</a>
                   </li>
                 </ul>
               </div>
-              <!--Grid column-->
-              <!--Grid column-->
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-          
+                <h5>Deixe-nos ajudar você</h5>
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a href="#!" class="text-dark">Link 1</a>
+                    <a href="#!">Sua conta</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 2</a>
+                    <a href="#!">Frete e prazo de entrega</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 3</a>
+                    <a href="#!">Devoluções e reembolsos</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-dark">Link 4</a>
+                    <a href="#!">Gerencie seu conteúdo e dispositivos</a>
+                  </li>
+                  <li>
+                    <a href="#!">Ajuda</a>
                   </li>
                 </ul>
               </div>
-              <!--Grid column-->
             </div>
-            <!--Grid row-->
           </div>
 
-        <!-- ------ -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            <span class="me-4">
-              <a href="#!" class="text-dark">Austrália |</a>
-            </span>
-            <span class="me-4">
-              <a href="#!" class="text-dark">Alemanha |</a>
-            </span>
-            <span class="me-4">
-              <a href="#!" class="text-dark">Canadá |</a>
-            </span>
-            <span class="me-4">
-              <a href="#!" class="text-dark">China |</a>
-            </span>
-            <span class="me-4">
-              <a href="#!" class="text-dark">Cingapura |</a>
-            </span>
-            <span class="me-4">
-              <a href="#!" class="text-dark">Espanha |</a>
-            </span>
-            <span class="me-4">
-          <!-- ------ -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <div class="text-center1 p-3">
+          <img src="./img/amazonlogo.png" alt="logo amazon rodapé"/>
+          <ul class="list-inline d-flex justify-content-center">
+              <li>
+                  <a href="#!">&nbsp;Austrália&nbsp;|</a>
+              </li>
+              <li>
+                  <a href="#!">&nbsp;Alemanha&nbsp;|</a>
+              </li>
+              <li>
+                  <a href="#!">&nbsp;Canadá&nbsp;|</a>
+              </li>
+              <li>
+                  <a href="#!">&nbsp;China&nbsp;|</a>
+              </li>
+              <li>
+                  <a href="#!">&nbsp;Cingapura&nbsp;|</a>
+              </li>
+              <li>
+                  <a href="#!">&nbsp;Espanha&nbsp;|</a>
+              </li>
+          </ul>
+      </div>      
+
+        <div class="text-center p-3">
+          <a href="https://www.linkedin.com/in/renan-oliveira-31b759243/">© 2024 Copyright</br> Feito para fins didáticos para o curso da EBAC</a>
         </div>
       </footer>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 <script>
 </script>
 </body>
-</html>
+</html> -->
