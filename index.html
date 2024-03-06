@@ -6,15 +6,60 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="icon" href="./img/amazon.png">
     <style>
+
         body{
     background-color: rgb(227, 230, 230);
     max-width: 2048px;
+    overflow-x: hidden;
 }
 
-.container-fluid {
-  background-color:#131921;
+header{
+  background-color: #131921;
 }
 
+
+.container-fluid img {
+  width:108px;
+  margin-bottom: -1.5em;
+  margin-top: -1.5em;
+  max-width: fit-content;
+}
+
+.container-fluid form {
+  width: 50%;
+  margin-left: 10em;
+}
+
+.container-fluid a img {
+width: 130px;
+}
+
+.endereco {
+color: #DDD;
+font-size: small;
+width: 10%;
+}
+
+
+.button-img img {
+  width: 300px;
+  position:relative;
+}
+
+.input-group button {
+  background-color: #FEBD69;
+  
+}
+
+.input-group button:hover {
+  background-color:#F3A847;
+}
+
+.input-group button img {
+width: 20px;
+}
+
+/* body*/
         .previcon1 {
             width: 50px;
             height: 50px;
@@ -155,48 +200,72 @@
     <title>Amazon.com.br | Tudo pra você, de A a Z.</title>
 </head>
 <body>
-    <header id="cabecalho">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <!--<a class="navbar-brand" href="#">Navbar</a>-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--button-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="Amazon logo" width="25%" height="25%">
-              </a>
+  <header id="cabecalho">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo Amazon"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn endereco" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="button-img">
+                <img src="./img/endereço.png" alt="endereço" class="ms-2"/>
             </div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+        </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <form class="d-flex" role="search">
+            <form class="container-fluid">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1" style="font-family: Arial, sans-serif; font-size: 14px;">Todos</span>
+                <input type="text" class="form-control" placeholder="Pesquisa Amazon.com.br" aria-label="Username" aria-describedby="basic-addon1">
+                <button class="btn" type="submit"><img src="./img/lupa.png"></button>
+              </div>
             </form>
-          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-   <section>
+      </div>
+    </nav>
+  
+</header>
+ <!-- <section>
         <div class="container">
             <div id="carousel" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -462,7 +531,7 @@
           <a href="https://www.linkedin.com/in/renan-oliveira-31b759243/">© 2024 Copyright</br> Feito para fins didáticos para o curso da EBAC</a>
         </div>
       </footer>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
+    --><script src="./lib/bootstrap.bundle.min.js"></script>
 <script>
 </script>
 </body>
