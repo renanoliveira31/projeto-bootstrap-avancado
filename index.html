@@ -7,7 +7,7 @@
     <link rel="icon" href="./img/amazon.png">
     <style>
 
-        body{
+    body{
     background-color: rgb(227, 230, 230);
     max-width: 2048px;
     overflow-x: hidden;
@@ -40,24 +40,54 @@ font-size: small;
 width: 10%;
 }
 
-
 .button-img img {
   width: 300px;
   position:relative;
 }
 
-.input-group button {
+.btn2 {
   background-color: #FEBD69;
   
 }
 
-.input-group button:hover {
+.btn2:hover {
   background-color:#F3A847;
 }
 
 .input-group button img {
 width: 20px;
 }
+
+.menu{
+color: #ddd;
+}
+
+.nav1 {
+  margin-left: 35em;
+}
+
+.nav2{
+  background-color: #232F3E;
+}
+
+.nav-item a img{
+  width: 100%;
+}
+
+ul li a h6 {
+  font-size: 14px;
+  margin-bottom: -0.5em;
+  color: #DDD;
+}
+
+.lidropdown:hover {
+  border-color: white;
+}
+.dropdown-menu-columns {
+  column-count: 2; 
+  column-gap: 20px;
+}
+
 
 /* body*/
         .previcon1 {
@@ -208,13 +238,12 @@ width: 20px;
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Button trigger modal -->
+          <!-- Button modal -->
           <button type="button" class="btn endereco" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <div class="button-img">
                 <img src="./img/endereço.png" alt="endereço" class="ms-2"/>
             </div>
         </button>
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -233,39 +262,109 @@ width: 20px;
     </div>
   </div>
 </div>
+<!--form-->
           <form class="d-flex" role="search">
             <form class="container-fluid">
               <div class="input-group">
-                <span class="input-group-text" id="basic-addon1" style="font-family: Arial, sans-serif; font-size: 14px;">Todos</span>
+                <span class="input-group-text" id="basic-addon1" style="font-family: Arial, sans-serif; font-size: 14px;">
+                  <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: none;">
+                    Todos 
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item="#" style="text-decoration: none; color: black;"><strong>Todos os departamentos</strong></a></li>
+                    <li><a class="dropdown-item" href="#">Alimentos e Bebidas</a></li>
+                    <li><a class="dropdown-item" href="#">Amazon Quase Novo</a></li>
+                    <li><a class="dropdown-item" href="#">Apps e Jogos</a></li>
+                    <li><a class="dropdown-item" href="#">Audiolivros Audible</a></li>
+                    <li><a class="dropdown-item" href="#">Automotivo</a></li>
+                    <li><a class="dropdown-item" href="#">Bebês</a></li>
+                    <li><a class="dropdown-item" href="#">Beleza</a></li>
+                    <li><a class="dropdown-item" href="#">Beleza de Luxo</a></li>
+                    <li><a class="dropdown-item" href="#">Bolsas, Malas e Mochilas</a></li>
+                    <li><a class="dropdown-item" href="#">Brinquedos e Jogos</a></li>
+                    <li><a class="dropdown-item" href="#">Casa</a></li>
+                    <li><a class="dropdown-item" href="#">CD e Vinil</a></li>
+                    <li><a class="dropdown-item" href="#">Computadores e Informática</a></li>
+                    <li><a class="dropdown-item" href="#">Cozinha</a></li>
+                    <li><a class="dropdown-item" href="#">Dispositivos Amazon</a></li>
+                    <li><a class="dropdown-item" href="#">DVD e Blu-Ray</a></li>
+                    <li><a class="dropdown-item" href="#">Eletrodomésticos</a></li>
+                    <li><a class="dropdown-item" href="#">Eletrônicos</a></li>
+                  </ul>
+                </div></span>
                 <input type="text" class="form-control" placeholder="Pesquisa Amazon.com.br" aria-label="Username" aria-describedby="basic-addon1">
-                <button class="btn" type="submit"><img src="./img/lupa.png"></button>
+                <button class="btn btn2" type="submit"><img src="./img/lupa.png"></button>
               </div>
             </form>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+<!--LIST-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item dropdown lidropdown">
+              <a class="nav-link menu dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <h6>Olá, faça seu login</h6>
+                <strong>Contas e Listas</strong>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <div class="dropdown">
+                <ul class="dropdown-menu dropdown-menu-columns">
+                  <li><a class="dropdown-item" href="#">Criar uma Lista de desejos</a></li>
+                  <li><a class="dropdown-item" href="#">Seus pedidos</a></li>
+                  <li><a class="dropdown-item" href="#">Recomendados para você</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Seu Prime Video</a></li>
+                  <li><a class="dropdown-item" href="#">Seu Kindle Unlimited</a></li>
+                  <li><a class="dropdown-item" href="#">Seu Amazon Drive em Amazon.com</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Seu Prime</a></li>
+                  <li><a class="dropdown-item" href="#">Gerencie seu conteúdo e dispositivos</a></li>
+                  <li><a class="dropdown-item" href="#">Inscrições e assinaturas</a></li>
+                  <li><a class="dropdown-item" href="#">Programe e Poupe</a></li>
+                  <li><a class="dropdown-item" href="#">Seus aplicativos e dispositivos</a></li>
+                </ul>
+              </div>
+              
+            <li class="nav-item">
+              <a class="nav-link menu menu2" aria-current="page" href="#"><h6>Devoluções</h6><strong>e Pedidos</strong></a>
+            </li>
+            <li>
+              <a class="nav-link menu" href="#"><img src="./img/carrinho.png"></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  
+
+    <!--NAVBAR 2-->
+    <div class="nav2">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- LIST -->
+          <ul class="navbar-nav nav1 justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link menu" aria-current="page" href="#">Venda na amazon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu" aria-current="page" href="#">Mais vendidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu" aria-current="page" href="#">Prime</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu" aria-current="page" href="#">Ofertas do Dia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu" aria-current="page" href="#">Livros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link img2" aria-current="page" href="#"><img src="./img/ouca.png" alt="texto sobre audible"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+  </div>
 </header>
- <!-- <section>
+<section>
         <div class="container">
             <div id="carousel" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -425,10 +524,8 @@ width: 20px;
             </article>
         </div>
     </div>
-
     </div>
     </section>
-
     <footer class="text-center text-lg-start">
         <div class="container p-3">
             <div class="row">
@@ -456,7 +553,7 @@ width: 20px;
                     <a href="#!">Venda na Amazon</a>
                   </li>
                   <li>
-                    <a href="#!">Proteja e construa a sua marca</a>
+                    <a href="#!">Proteja e construa a sua marca<a>
                   </li>
                   <li>
                     <a href="#!">Publique seus livros</a>
@@ -502,7 +599,6 @@ width: 20px;
               </div>
             </div>
           </div>
-
         <div class="text-center1 p-3">
           <img src="./img/amazonlogo.png" alt="logo amazon rodapé"/>
           <ul class="list-inline d-flex justify-content-center">
@@ -524,14 +620,19 @@ width: 20px;
               <li>
                   <a href="#!">&nbsp;Espanha&nbsp;|</a>
               </li>
+              <li>
+                <a href="#!">&nbsp;Brasil&nbsp;|</a>
+            </li>
+            <li>
+              <a href="#!">&nbsp;Suiça&nbsp;</a>
+          </li>
           </ul>
       </div>      
-
         <div class="text-center p-3">
-          <a href="https://www.linkedin.com/in/renan-oliveira-31b759243/">© 2024 Copyright</br> Feito para fins didáticos para o curso da EBAC</a>
+          <a href="https://www.linkedin.com/in/renan-oliveira-31b759243/">© 2024 Copyright</br> Feito por Renan Oliveira para o curso da EBAC</a>
         </div>
       </footer>
-    --><script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 <script>
 </script>
 </body>
