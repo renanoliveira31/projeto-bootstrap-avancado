@@ -26,7 +26,6 @@ header{
 
 .container-fluid form {
   width: 50%;
-  margin-left: em;
 }
 
 .container-fluid a img {
@@ -195,7 +194,17 @@ ul li a h6 {
     }
 
     @media (min-width: 768px) and (max-width: 991.98px) {
-        .col-4 {
+      .container-fluid img {
+  margin-bottom: -1.5em;
+  margin-top: -1.5em;
+  max-width: fit-content;
+}
+
+.container-fluid form {
+  width: 100%;
+}
+
+      .col-4 {
     width: 50%;
     margin-top: 11em;
     justify-content: center;
@@ -230,22 +239,137 @@ ul li a h6 {
     }
 
   }
-@media (max-width: 767.98px) {
+@media (min-width:321px) and (max-width: 767.98px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-fluid form {
+  width: 100%;
+}
+
+.img2 {
+  margin-left: -2.5em;
+}
+
   .col-4 {
     width: 75%; 
-    margin-top: 11em;
-    margin-left: 5em;
+    align-items: center;
+    display: block;
   }
+
   .previcon1 {
             width: 50px;
             height: 50px;
             margin-bottom: 0em;
 }
-
 .carousel-inner {
         margin-left: 0em;
         margin-top: 1em;
     }
+
+
+.card2 {
+  margin-left: 3.8em;
+  width: 100%;
+  margin-top: 3em;
+  height: 90%;
+  margin-bottom: -2em;
+
+}
+
+    .carousel-inner h5 {
+        margin-left: 1em;
+        margin-top: 1em;
+        margin-bottom: -0.5em;
+    }
+
+    #carousel3 h5, #carousel2 h5 {
+      background-color: white;
+      width: 100%;
+      margin-left: 0em;
+      margin-bottom: -0.8em;
+      padding-left: 1em;
+      padding-bottom: 0.3em;
+      padding-top: 0.3em;
+      margin-top: 1em;
+    }
+
+    #carousel3{
+      margin-top: 3em;
+    }
+
+footer {
+  overflow-x: hidden;
+}
+
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-fluid form {
+  width: 100%;
+}
+
+.img2 {
+  margin-left: -2em;
+}
+  .col-4 {
+    width: 75%; 
+    align-items: center;
+    display: block;
+  }
+
+  .previcon1 {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 0em;
+}
+.carousel-inner {
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+
+
+.card2 {
+  margin-left: 2.8em;
+  width: 100%;
+  margin-top: 3em;
+  height: 90%;
+  margin-bottom: -2em;
+
+}
+
+    .carousel-inner h5 {
+        margin-left: 1em;
+        margin-top: 1em;
+        margin-bottom: -0.5em;
+    }
+
+    #carousel3 h5, #carousel2 h5 {
+      background-color: white;
+      width: 100%;
+      margin-left: 0em;
+      margin-bottom: -0.8em;
+      padding-left: 1em;
+      padding-bottom: 0.3em;
+      padding-top: 0.3em;
+      margin-top: 1em;
+    }
+
+    #carousel3{
+      margin-top: 3em;
+    }
+
+footer {
+  overflow-x: hidden;
+}
+
 }
 </style>
 
@@ -417,7 +541,7 @@ ul li a h6 {
             </div>
             <div class="row">
             <div class="col-4">
-                <article class="card">
+                <article class="card card2">
                         <h5>Ofertas do Dia, de A a Z</h5>
                     <img src="./img/imgcard1.jpg"/>
                     <div class="card-body">
@@ -426,7 +550,7 @@ ul li a h6 {
                 </article>
             </div>
             <div class="col-4">
-                <article class="card">
+                <article class="card card2">
                         <h5>O seu príncipe favorito em audiolivro</h5>
                     <img src="./img/imgcard4.jpg"/>
                     <div class="card-body">
@@ -435,7 +559,7 @@ ul li a h6 {
                 </article>
             </div>
             <div class="col-4">
-                <article class="card">
+                <article class="card card2">
                         <h5>Compre usando pontos Livelo</h5>
                     <img src="./img/imgcard3.jpg"/>
                     <div class="card-body">
@@ -514,7 +638,7 @@ ul li a h6 {
     </div>
       <div class="row">
         <div class="col-4 colunas">
-            <article class="card card1">
+            <article class="card card2 card1">
                     <h5>Mais Vendidos em Informática</h5>
                 <img src="./img/imgcard11.jpg"/>
                 <div class="card-body">
@@ -523,7 +647,7 @@ ul li a h6 {
             </article>
         </div>
         <div class="col-4 colunas">
-            <article class="card card1">
+            <article class="card card2 card1">
                     <h5>Tudo para Exercícios e Academia</h5>
                 <img src="./img/imgcard12.jpg"/>
                 <div class="card-body">
@@ -532,7 +656,7 @@ ul li a h6 {
             </article>
         </div>
         <div class="col-4 colunas">
-            <article class="card card1">
+            <article class="card card2 card1">
                     <h5>Mais Vendidos em TV e Áudio</h5>
                 <img src="./img/imgcard13.jpg"/>
                 <div class="card-body">
