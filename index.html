@@ -19,7 +19,6 @@ header{
 
 
 .container-fluid img {
-  width:108px;
   margin-bottom: -1.5em;
   margin-top: -1.5em;
   max-width: fit-content;
@@ -27,7 +26,7 @@ header{
 
 .container-fluid form {
   width: 50%;
-  margin-left: 10em;
+  margin-left: em;
 }
 
 .container-fluid a img {
@@ -38,11 +37,6 @@ width: 130px;
 color: #DDD;
 font-size: small;
 width: 10%;
-}
-
-.button-img img {
-  width: 300px;
-  position:relative;
 }
 
 .btn2 {
@@ -63,7 +57,7 @@ color: #ddd;
 }
 
 .nav1 {
-  margin-left: 35em;
+  margin-left: 2em;
 }
 
 .nav2{
@@ -206,8 +200,36 @@ ul li a h6 {
     margin-top: 11em;
     justify-content: center;
 }
+    .container-fluid {
+      display: block;
+      justify-content:space-around;
+    }
+
+    .nav-item a img{
+  margin-left: -2.8em;
 }
 
+.colunas {
+  height: 100%;
+}
+
+.colunas img {
+  width: 100%;
+}
+
+    .card1 {
+        margin-top: -10em;
+        border-radius: 0px;
+        border-color: white;
+        background-color: white;
+        padding: 1em;
+        align-self: center;
+        margin-right: -1em;
+        margin-left: 1em;
+        height: 100%;
+    }
+
+  }
 @media (max-width: 767.98px) {
   .col-4 {
     width: 75%; 
@@ -240,9 +262,6 @@ ul li a h6 {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Button modal -->
           <button type="button" class="btn endereco" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <div class="button-img">
-                <img src="./img/endereço.png" alt="endereço" class="ms-2"/>
-            </div>
         </button>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -396,7 +415,6 @@ ul li a h6 {
                     <span class="carousel-control-next-icon previcon1"></span>
                 </button>
             </div>
-
             <div class="row">
             <div class="col-4">
                 <article class="card">
@@ -494,9 +512,8 @@ ul li a h6 {
             <span class="visually-hidden">Próximo</span>
         </button>
     </div>
-
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 colunas">
             <article class="card card1">
                     <h5>Mais Vendidos em Informática</h5>
                 <img src="./img/imgcard11.jpg"/>
@@ -505,7 +522,7 @@ ul li a h6 {
                 </div>
             </article>
         </div>
-        <div class="col-4">
+        <div class="col-4 colunas">
             <article class="card card1">
                     <h5>Tudo para Exercícios e Academia</h5>
                 <img src="./img/imgcard12.jpg"/>
@@ -514,7 +531,7 @@ ul li a h6 {
                 </div>
             </article>
         </div>
-        <div class="col-4">
+        <div class="col-4 colunas">
             <article class="card card1">
                     <h5>Mais Vendidos em TV e Áudio</h5>
                 <img src="./img/imgcard13.jpg"/>
